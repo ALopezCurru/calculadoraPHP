@@ -1,0 +1,116 @@
+/* Exportando fuentes */
+/* Roboto - Principal */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* Poppins - Secundario*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 98vh;
+    height: auto;
+    background-color: #c0dac7;
+    
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hidden{
+    display: none;
+}
+#containerCalculadora{
+    width: 80%;
+    height: 85vh;
+    background-color: #dfece2;
+    box-shadow: 5px 7px 20px black;
+    border-radius: 9px;
+    flex-direction: column;
+}
+form{
+    width: 35%;
+    min-height: 70vh;
+    border-radius: 9px;
+    background-color: #c0dac7;
+    flex-direction: column;
+    justify-content: start !important;
+    padding: 2%;
+}
+input{
+    width: 98%;
+    min-height: 10vh;
+    border: none;
+    border-radius: 9px; 
+    font-family: "Poppins", sans-serif;
+    font-weight: regular;
+    font-size: 1.5rem;
+    text-align: end;
+}
+#botones{
+    width: 98%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+
+}
+#btnCalculate{
+    width: 98%;
+    min-height: 10vh;
+    background-color: #101e17;
+    color: white;
+    border: none;
+    border-radius: 9px;
+}
+
+#numeros{
+ width: 70%;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: auto;
+}
+#operaciones{
+ width: 30%;
+ display: grid;
+}
+
+.btnNumero, .btnOperacion{
+    width: 98%;
+    height: 75px;
+    place-self: center;
+    border: none;
+    border-radius: 9px;
+    color:white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+.btnOperacion{
+    background-color: #1e3629;
+}
+.btnNumero{
+    background-color: #244131;
+}
+.btnOperacion:hover{
+    background-color: #2b513b;
+}
+.btnNumero:hover{
+    background-color: #48815e;
+}
+button:hover{
+    cursor: pointer;
+}
+#btnCalculate:hover{
+ background-color: #8db99b;
+ color: black;
+}
+#resultado{
+    margin-top: 0.5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
