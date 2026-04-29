@@ -114,3 +114,9 @@ button:hover{
     font-weight: bold;
     font-size: 1.2rem;
 }
+
+input{
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: #f0f0f0 I !important;
+}

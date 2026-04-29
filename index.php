@@ -36,8 +36,7 @@
       </div>
       <button id="btnCalculate" name="calculate">=</button>
     </form>
-    <p id="resultado" class="">
-     <?php
+      <?php
 
       // Mostrando errores en PHP
       ini_set('display_errors', '1');
@@ -49,10 +48,9 @@
         $calculo = $_POST['calculation'];
         $resultado = eval("return $calculo;");
 
-        echo "Resultado: ".$resultado;
       }
       ?>
-    </p>
+    <p id="resultado" class=""><?php  echo "Resultado:".$resultado; ?></p>
   </div>
 </body>
 <script type="module" src="./main.js"></script>
