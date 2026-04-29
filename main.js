@@ -22,5 +22,6 @@ DOM.botonesOperacion.forEach(btn=>{
 
 DOM.btn_clear.addEventListener('click',function(){
     DOM.input_operacion.value = "";
+    DOM.label_resultado.innerHTML = "Resultado: ";
 });
 
